@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>All Pages</title>
+    </head>
+    <body>
+        <ul>
+        {% for template in templates %}
+            <li><a href="{{url_for('.show_template', page=template)}}">{{template}}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
